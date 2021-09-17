@@ -11,7 +11,6 @@ async function findBy(filter){
 
 async function findById(id){
     return await db('users')
-    .select('id', 'username')
     .where("id", id)
 }
 
